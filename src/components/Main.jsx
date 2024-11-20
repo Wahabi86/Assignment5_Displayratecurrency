@@ -7,11 +7,11 @@ const Main = () => {
   useEffect(() => {
     // mengambil api dari env
     const url = process.env.REACT_APP_API_URL;
-    const apikey = process.env.REACT_APP_API_KEY;
+    const apiKey = process.env.REACT_APP_API_KEY;
     axios
       .get(url, {
         params: {
-          apikey: apikey,
+          apikey: apiKey,
           symbols: "CAD,IDR,JPY,CHF,EUR,GBP",
         },
       })
